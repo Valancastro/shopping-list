@@ -9,34 +9,37 @@
 	<link rel="stylesheet" href="css/main.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-</head>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
-	 
-	 
 
 	<div class="head-container">
 		<div class="logo"> </div>
 		 <p class="logo-p">The List<br>
-		 <p style="
-			    text-align: center;
-			    position: relative;
-			    top: 6rem; 
-			     ">by: Victor Castro
-		   </p>
-		 </p>
+		   </p><p class="author">by: Victor Castro</p>
+		 <p></p>
 	</div>
-
 
 	<div class="center-container">
-		
+	     <div class="main-info">
+	      <p class="info">Enter an Item and Price, then press Enter</p>
+	      </div>	
+             
+       
+       <div class="center-wrapper">
+
+	    <button class="reset">reset</button>
+
+         <input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+Enter Item" <="" input="">
+
+		<input id="add-price" type="number" min="0.00" max="1000.00" value="0">
+          <div class="list-area"></div>
+		</div>
 	</div>
   
-<footer class="foot"></footer>
-
-</body>
-
+	<footer class="foot"></footer>
  
+</body>
 </html>
