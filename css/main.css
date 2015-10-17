@@ -192,6 +192,8 @@ text-align: center;
 	background: url('../images/63D42354.png');
 }
 
+/*how do i get the .price not to go over the checkmark when small*/
+
 
 .cross-off {
     cursor: pointer;
@@ -212,6 +214,8 @@ text-align: center;
     height: 21px;
     width: 24px;
 }
+
+/*how do i align the price so its more of a cloumn?*/
 
 .price {
 
