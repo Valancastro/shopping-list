@@ -139,7 +139,7 @@ body {
 }
 
 .list-area {
-	margin-top: 10px;
+	margin-top: 25px;
 	width: 100%;
 	height:auto;
 }
@@ -200,6 +200,30 @@ body {
     min-width: 70%;
 }    
 
+.subtotal {
+
+	display: table;
+    margin: 2.5rem auto;
+    width: 100%;
+    background-color: #ADE6B7;
+    border: #ADE6B7 solid;
+    border-radius: 19px;
+    max-width: 35rem;
+
+}
+
+.subtotal-text {
+
+}
+
+.subtotal-column{ 
+display: inline;
+}
+
+.total-subtotal {
+ float: right;
+ width: 25%
+}
 
 /* page footer starts */
 
