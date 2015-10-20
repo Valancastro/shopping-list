@@ -1,4 +1,6 @@
-<html lang="en"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head>
+<html lang="en">
+
+<head>
 	<meta charset="UTF-8">
 	<title>Shopping-list</title>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -28,11 +30,13 @@
 
        <div class="center-wrapper">
 
+            <form id="target" action="" onsubmit="return false;"> 
 		    <button class="reset">reset</button>
 
+	         
 	         <input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+Enter Item" <="" input="">
+			<input id="add-price" type="number" min="0.00" max="1000.00" value="0"></form>
 
-			<input id="add-price" type="number" min="0.00" max="1000.00" value="0">
 
  <!-- listed items displayed here -->
 
