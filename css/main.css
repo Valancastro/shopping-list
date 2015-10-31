@@ -170,15 +170,15 @@ form {
 
 .strikethrough {
 
-    display: table;
-    margin: 8px auto;
-    width: 100%;
+    display: table !important;
+    margin: 8px auto !important;
+    width: 100% !important;
     border: #CCCCCC solid !important;
-    border-radius: 19px;
-    max-width: 35rem;
+    border-radius: 19px !important;
+    max-width: 35rem !important;
     background-color: #CCCCCC !important;
     text-decoration: line-through !important;
-    color: white;
+    color: white !important;
 }
 
 .no-strikethrough {
@@ -241,7 +241,7 @@ display: inline;
 }
 
 .circle {
-  color: white;
+
 }
 
 /* page footer starts */

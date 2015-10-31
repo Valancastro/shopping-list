@@ -5,53 +5,58 @@ $(document).ready(function() {
 
   $('form').submit(function(e) {
 
-    var item = $('#add-items').val()
-    var price = $('#add-price').val()
+      var item = $('#add-items').val()
+      var price = $('#add-price').val()
 
-    if (item == '') {
+      if (item == '') {
 
-      // alert('Must enter a Item!')
+        // alert('Must enter a Item!')
 
-    } else if (parseFloat(price) < 0) {
+      } else if (parseFloat(price) < 0) {
 
-      // alert('price cannot be less than Zero')
-    } else {
+        // alert('price cannot be less than Zero')
+      } else {
 
-      total += parseFloat(price);
+        total += parseFloat(price);
 
-      $('.total-subtotal').text("" + total)
+        $('.total-subtotal').text("" + total)
 
-      $('.list-area').prepend(' <div class="no-strikethrough"><i class="fa fa-bomb bomb" style="float: left; cursor:pointer;"></i><span class="item-list">' + item + '</span><div class="price"><span class="price-list">' + price + '</span></div><i class="fa fa-check-circle check" class="check" style="cursor:pointer;"></i></div>')
+        $('.list-area').prepend(' <div class="no-strikethrough"><i class="fa fa-bomb bomb" style="float: left; cursor:pointer;"></i><span class="item-list">' + item + '</span><div class="price"><span class="price-list">' + price + '</span></div><a class="check-circle"><i class="fa fa-check-circle circle" style="cursor:pointer;"></i></a></div>')
 
-      $('.bomb').on("click", function(event) {
-        event.preventDefault();
-        $(this).parent().fadeOut("slow")
-      })
+        $('.bomb').on("click", function(event) {
+          event.preventDefault();
+          $(this).parent().remove();
+        })
 
-      $('.check').parent().on("click",function(e) {
-           e.preventDefault();
-         $(this).toggleClass('strikethrough');
-         
-
-         });
-
-      this.reset()
-
-    }
-
-    e.preventDefault();
-
-  });
+        $('.circle').on("click", function(e) {
+          e.preventDefault();
+          $(this).addClass('fa-circle-o');
+          $(this).parent().addClass('strikethrough');
 
 
-  $('.reset').click(function(e) {
-    $('.list-area').empty();
-    $('.total-subtotal').text('');
-    total = 0;
+        $(this).on("click", function(e) {
+          e.preventDefault();
+          $(this).removeClass('fa-circle-o');
+          $(this).parent().removeClass('strikethrough');
+        })
+     })
+        this.reset()
+
+  }
+
+  e.preventDefault();
+
+});
+
+
+$('.reset').click(function(e) {
+$('.list-area').empty();
+$('.total-subtotal').text('');
+total = 0;
 
 
 
-  });
+});
 
 
 
