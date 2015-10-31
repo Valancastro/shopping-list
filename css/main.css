@@ -10,7 +10,7 @@ body {
     height: 100%;
     display: inline-block;
     font-size: x-large;
-   
+
 }
 
 /* Page Header starts */
@@ -76,7 +76,7 @@ body {
 }
 
 form {
-	
+
 	display: inline-block;
 }
 
@@ -173,11 +173,11 @@ form {
     display: table;
     margin: 8px auto;
     width: 100%;
-    border: #CCCCCC solid;
+    border: #CCCCCC solid !important;
     border-radius: 19px;
     max-width: 35rem;
-    background-color: #CCCCCC;
-    text-decoration: line-through;
+    background-color: #CCCCCC !important;
+    text-decoration: line-through !important;
     color: white;
 }
 
@@ -205,11 +205,11 @@ form {
 
 
 .item-list {
-    
+
     float: left;
     min-width: 70%;
     height: 28px;
-}    
+}
 
 .subtotal {
 
@@ -227,13 +227,21 @@ form {
 
 }
 
-.subtotal-column{ 
+.subtotal-column{
 display: inline;
 }
 
 .total-subtotal {
  float: right;
  width: 25%
+}
+
+.check {
+
+}
+
+.circle {
+  color: white;
 }
 
 /* page footer starts */

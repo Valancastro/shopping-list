@@ -5,7 +5,7 @@
 	<title>Shopping-list</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
@@ -16,76 +16,82 @@
 
 	<div class="head-container">
 		<div class="logo"> </div>
-		 <p class="logo-p">The List<br>
-		   </p><p class="author">by: Victor Castro</p>
-		 <p></p>
+		<p class="logo-p">The List
+			<br>
+		</p>
+		<p class="author">by: Victor Castro</p>
+		<p></p>
 	</div>
 
 	<div class="center-container">
-	     <div class="main-info">
-	      <p class="info">Enter an Item and Price, then press Enter</p>
-	      </div>	
-             
-   <!-- inputs and rest for items and price displayed here -->
+		<div class="main-info">
+			<p class="info">Enter an Item and Price, then press Enter</p>
+		</div>
 
-       <div class="center-wrapper">
+		<!-- inputs and rest for items and price displayed here -->
 
-          
-
-           <button class="reset">reset</button>
-
-           <form id="target" action="" onsubmit="return false;"> 
-
-			 <input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+Enter Item">
-
-			 <input id="add-price" type="number" min="0.00" max="500000.00" value="0">
-
-			 <input class="submit-form" type="submit"></form>
+		<div class="center-wrapper">
 
 
- <!-- listed items displayed here -->
 
-			 <div class="list-area">
-			      
+			<button class="reset">reset</button>
 
-			    <div class="strikethrough">
-			         <i class="fa fa-bomb" style="float: left;"></i>
-			          <span class="item-list">butter</span>
-			           <div class="price">
-			            <span class="price-list">2.95</span>
-			           </div>
-			         <i class="fa fa-circle-o"></i>
-			    </div>
+			<form id="target" action="" onsubmit="return false;">
 
-			    <div class="strikethrough">
-			         <i class="fa fa-bomb" style="float: left;"></i>
-			          <span class="item-list">bacon</span>
-			           <div class="price">
-			            <span class="price-list">12.00</span>
-			           </div>
-			         <i class="fa fa-circle-o"></i>
-			    </div>
+				<input id="add-items" type="text" name="add-items" autocomplete="off" placeholder="+Enter Item">
 
-		<!-- Price total displayed here -->
-      </div>
-			      <div class="subtotal">
-					<div class="subtotal-text">
-					 <i class="fa fa-credit-card" style=" float:left; "></i>
-					  <span>Subtotal</span>
+				<input id="add-price" type="number" min="0.00" max="500000.00" value="0">
 
-					  	<div class="subtotal-column">
-							<span class="total-subtotal"></span>
-						</div>
+				<input class="submit-form" type="submit">
+			</form>
+
+
+			<!-- listed items displayed here -->
+
+			<div class="list-area">
+
+
+				<div class="strikethrough">
+					<i class="fa fa-bomb" style="float: left;"></i>
+					<span class="item-list">butter</span>
+					<div class="price">
+						<span class="price-list">2.95</span>
 					</div>
-					
-			     </div>
+					<i class="fa fa-circle-o circle"></i>
+				</div>
 
-			          	
-			 </div>
-	   </div>
-	
-  
+				<div class="strikethrough">
+					<i class="fa fa-bomb" style="float: left;"></i>
+					<span class="item-list">bacon</span>
+					<div class="price">
+						<span class="price-list">12.00</span>
+					</div>
+					<i class="fa fa-circle-o circle"></i>
+				</div>
+			</div>
+
+			<!-- Price total displayed here -->
+
+			<div class="subtotal">
+				<div class="subtotal-text">
+					<i class="fa fa-credit-card" style=" float:left; "></i>
+					<span>Subtotal</span>
+
+					<div class="subtotal-column">
+						<span class="total-subtotal"></span>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
 	<footer class="foot"></footer>
-   <script src="js/app.js"></script>
+	<script src="js/app.js"></script>
 
-</body></html>
+
+</body>
+
+</html>
