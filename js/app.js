@@ -28,18 +28,12 @@ $(document).ready(function() {
           $(this).parent().remove();
         })
 
-        $('.circle').on("click", function(e) {
+        $('.circle').click(function(e) {
           e.preventDefault();
-          $(this).addClass('fa-circle-o');
-          $(this).parent().addClass('strikethrough');
-
-
-        $(this).on("click", function(e) {
-          e.preventDefault();
-          $(this).removeClass('fa-circle-o');
-          $(this).parent().removeClass('strikethrough');
+          $(this).toggleClass('fa-circle-o fa-circle-check');
+          $(this).parent().parent().toggleClass('strikethrough no-strikethrough')
+          $(this).unbind(alert);
         })
-     })
         this.reset()
 
   }
@@ -49,7 +43,7 @@ $(document).ready(function() {
 });
 
 
-$('.reset').click(function(e) {
+$('button').click(function(e) {
 $('.list-area').empty();
 $('.total-subtotal').text('');
 total = 0;
