@@ -21,12 +21,15 @@ $(document).ready(function() {
 
         $('.total-subtotal').text("" + total)
 
-        $('.list-area').prepend(' <div class="no-strikethrough"><i class="fa fa-bomb bomb" style="float: left; cursor:pointer;"></i><span class="item-list">' + item + '</span><div class="price"><span class="price-list">' + price + '</span></div><a class="check-circle"><i class="fa fa-check-circle circle" style="cursor:pointer;"></i></a></div>')
+        $('.list-area').prepend(' <div class="no-strikethrough"><i class="fa fa-bomb bomb" data-price="'+ price +'" style="float: left; cursor:pointer;"></i><span class="item-list">' + item + '</span><div class="price"><span class="price-list">' + price + '</span></div><a class="check-circle"><i class="fa fa-check-circle circle" style="cursor:pointer;"></i></a></div>')
 
         $('.bomb').on("click", function(event) {
           event.preventDefault();
           $(this).parent().remove();
-          $('.total-subtotal').text('');
+           var priceRemove = $(this).data("price")
+           total -= parseFloat(priceRemove) ;      
+          $('.total-subtotal').text("" + total)
+
 
         })
 
