@@ -10,11 +10,11 @@ $(document).ready(function() {
 
       if (item == '') {
 
-        // alert('Must enter a Item!')
+        alert('Must enter a Item!')
 
       } else if (parseFloat(price) < 0) {
 
-        // alert('price cannot be less than Zero')
+         alert('price cannot be less than Zero')
       } else {
 
         total += parseFloat(price);
@@ -26,6 +26,8 @@ $(document).ready(function() {
         $('.bomb').on("click", function(event) {
           event.preventDefault();
           $(this).parent().remove();
+          $('.total-subtotal').text('');
+
         })
 
         $('.circle').click(function(e) {
@@ -33,6 +35,7 @@ $(document).ready(function() {
           $(this).toggleClass('fa-circle-o fa-circle-check');
           $(this).parent().parent().toggleClass('strikethrough no-strikethrough')
           $(this).unbind(alert);
+
         })
         this.reset()
 
