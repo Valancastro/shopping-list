@@ -243,6 +243,10 @@ display: inline;
 .circle {
 
 }
+.fa-usd {
+position: relative;
+left: 11rem;
+}
 
 /* page footer starts */
 
